@@ -1,0 +1,156 @@
+<%- include("partials/header.ejs") %>
+    <% if(locals.sai) { %>
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+                        <%= sai.title %>
+                    </h1>
+                    <p class="lead">
+                        <%= sai.content %>
+                    </p>
+
+                </div>
+                <div class="col-lg-4"> <a href="<%= sai.link %>"><img class="pb-5 px-auto rounded-3 mx-auto img-fluid"
+                            src="<%= sai.thumbnail %>" alt="<%= sai.alt %>"></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="album py-5 bg-body-tertiary rounded-3">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col ">
+                        <div class="card shadow-sm text-center h-100">
+                            <a href="<%= sai.pic1link %>">
+                                <img class="rounded-3 mt-2 py-2 px-2 img-fluid" src="<%= sai.pic1 %>"
+                                    alt="<%= sai.pic1alt %>" height="225" />
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <%= sai.pic1text %>
+                                </p>
+                            </div>
+                            <div class="mx-auto pb-2">
+                                <a class="btn btn-secondary btn-md" href="<%= sai.pic1link %>">More about this</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card shadow-sm text-center h-100">
+                            <a href="<%= sai.pic2link %>">
+                                <img class="rounded-3 mt-2 py-2 px-2 img-fluid" src="<%= sai.pic2 %>"
+                                    alt="<%= sai.pic2alt %>" height="225" />
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <%= sai.pic2text %>
+                                </p>
+                            </div>
+                            <div class="mx-auto pb-2">
+                                <a class="btn btn-secondary btn-md" href="<%= sai.pic2link %>">More about this</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm text-center h-100">
+                            <a href="<%= sai.pic3link %>">
+                                <img class="rounded-3 mt-2 py-2 px-2 img-fluid" src="<%= sai.pic3 %>"
+                                    alt="<%= sai.pic3alt %>" height="225" />
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <%= sai.pic3text %>
+                                </p>
+                            </div>
+                            <div class="mx-auto pb-2">
+                                <a class="btn btn-secondary btn-md" href="<%= sai.pic3link %>">More about this</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <% } %>
+
+
+
+            <% if(locals.text) { %>
+                <div class="container col-xxl-8 px-4 py-5">
+                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                        <div class="col-6">
+                            <img src="<%= text.profile.picture %>" class="d-block mx-auto rounded-5"
+                                alt="<%= text.profile.alt %>" height="350" loading="lazy">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                                <%= text.profile.title %>
+                            </h1>
+                            <h5 class="text-secondary">
+                                <%= text.profile.intro %>
+                            </h5>
+                            <p class="lead">
+                                <%= text.profile.content %>
+                            </p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container justify-content-center text-center d-flex w-100 h-100 p-3 mx-auto flex-column">
+                    <h3>Previous Employment</h3>
+                </div>
+                <div class="container pb-5">
+                    <div class="row">
+                        <div class="col-lg-4 text-center pb-3"><a href="<%= text.jobs.lawsons.link %>"><img
+                                    class="rounded-circle" src="<%= text.jobs.lawsons.picture %>"
+                                    alt="The logo for Lawsons & the link to their website" height="150"
+                                    width="150" /></a>
+                            <h2 class="fw-normal">
+                                <%= text.jobs.lawsons.title %>
+                            </h2>
+                            <p>
+                                <%= text.jobs.lawsons.intro %>
+                            </p>
+                            <p><a class="btn btn-secondary" href="/jobs/<%= text.jobs.lawsons.url %>">My experience
+                                    »</a>
+                            </p>
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-lg-4 text-center pb-3"><a href="<%= text.jobs.sciProj.link %>"><img
+                                    class="rounded-circle" src="<%=text.jobs.sciProj.picture %>"
+                                    alt="The logo for Science projects ltd & the link to their website" height="150"
+                                    width="150" /></a>
+                            <h2 class="fw-normal">
+                                <%= text.jobs.sciProj.title %>
+                            </h2>
+                            <p>
+                                <%= text.jobs.sciProj.intro %>
+                            </p>
+                            <p><a class="btn btn-secondary" href="/jobs/<%= text.jobs.sciProj.url %>">My experience
+                                    »</a>
+                            </p>
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-lg-4 text-center pb-3"><a href="<%= text.jobs.artem.link %>"><img
+                                    class="rounded-circle" src="<%=text.jobs.artem.picture %>"
+                                    alt="The logo for Artem SFX & the link to their website" height="150"
+                                    width="150" /></a>
+                            <h2 class="fw-normal">
+                                <%= text.jobs.artem.title %>
+                            </h2>
+                            <p>
+                                <%= text.jobs.artem.intro %>
+                            </p>
+                            <p><a class="btn btn-secondary" href="/jobs/<%= text.jobs.artem.url %>">My experience »</a>
+                            </p>
+                        </div><!-- /.col-lg-4 -->
+
+                    </div>
+                </div>
+                <% } %>
+                    <%- include("partials/footer.ejs") %>
