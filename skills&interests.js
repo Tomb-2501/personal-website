@@ -50,7 +50,7 @@ const skillsAndInterests = [
     pic1text: `In a dystopian future, Darrow, a Red miner on Mars, discovers he and his people are slaves to the ruling Golds. Deceived about Mars's terraforming, he joins a rebellion, infiltrating a Gold academy to exact revenge on the oppressive system. He must fight for survival and freedom in a brutal, color-coded society`,
     pic1alt: `The book cover of Red Rising by Pierce Brown`,
     pic1link: `https://www.goodreads.com/book/show/15839976-red-rising`,
-    pic2: `./images/Mistborn.png`,
+    pic2: `../images/Mistborn.png`,
     pic2text: `In Brandon Sanderson's Mistborn: The Final Empire, a world of ash and mist is ruled by a tyrannical immortal, the Lord Ruler. A brilliant thief, Kelsier, assembles a crew, including the young skaa thief Vin, to overthrow him using Allomancy, a magic system involving the burning of metals. Vin, initially skeptical, trains to master her powers as they attempt to liberate the oppressed skaa. `,
     pic2alt: `The book cover of Mistbornb by Brandon Sanderson`,
     pic2link: `https://www.goodreads.com/book/show/68428.Mistborn`,
