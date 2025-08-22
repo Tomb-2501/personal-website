@@ -67,7 +67,7 @@ app.get("/jobs/:url", (req, res) => {
   });
 });
 
-app.get("/:url", (req, res) => {
+app.get("/skills-and-interests/:url", (req, res) => {
   const requestedUrl = req.params.url;
   skillsAndInterests.forEach(function (sai) {
     const storedUrl = sai.url;
