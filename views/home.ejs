@@ -4,7 +4,13 @@
     <main class="container">
         <% if(locals.text){ %>
             <div class="row p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary shadow">
-                <div class="col-lg-6 px-0">
+
+                <div class="col-auto mx-auto">
+                    <img class="shadow rounded-5 mt-2" height="340" src="<%= text.profile.picture %>"
+                        alt="<%= text.profile.alt %>" />
+
+                </div>
+                <div class="col-lg-6 px-0 my-2">
                     <h1 class="display-3">
                         <%= text.profile.title %>
                     </h1>
@@ -25,10 +31,7 @@
                     </ul>
                     </p>
                 </div>
-                <div class="col-auto mx-auto">
-                    <img class="shadow rounded-5 mt-2" height="340" src="<%= text.profile.picture %>"
-                        alt="<%= text.profile.alt %>" />
-                </div>
+
             </div>
             <% } %>
                 <div class="row justify-content-md-center">
